@@ -1,0 +1,141 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Test e2e feature",
+    "line": 2,
+    "id": "test-e2e-feature",
+    "tags": [
+      {
+        "name": "@e2e",
+        "line": 1
+      }
+    ],
+    "uri": "features\\e2e\\home_e2e.feature",
+    "elements": [
+      {
+        "id": "test-e2e-feature;invalid-search-input-has-no-results",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Invalid search input has no results",
+        "tags": [
+          {
+            "name": "@e2e",
+            "line": 1
+          },
+          {
+            "name": "@e2e-1",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features\\hooks.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1100000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I open \"http://automationpractice.com/index.php\" in a new page",
+            "match": {
+              "location": "features\\steps\\e2e\\home_e2e_steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5837000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I fill searchbar with: \"asdf\" on Home Page",
+            "match": {
+              "location": "features\\steps\\e2e\\home_e2e_steps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1746000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click on search button on Home Page",
+            "match": {
+              "location": "features\\steps\\e2e\\home_e2e_steps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1936000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the warning box message is the following: \"No results were found for your search\" on Home Page",
+            "match": {
+              "location": "features\\steps\\e2e\\home_e2e_steps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1136000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-e2e-feature;invalid-search-input-has-no-results",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Invalid search input has no results",
+        "tags": [
+          {
+            "name": "@e2e",
+            "line": 1
+          },
+          {
+            "name": "@e2e-2",
+            "line": 11
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features\\hooks.js:13"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I open \"http://google.com\" in a new page",
+            "match": {
+              "location": "features\\steps\\e2e\\home_e2e_steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 967000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

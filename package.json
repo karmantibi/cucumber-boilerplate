@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "fs-extra": "^8.1.0"
+    "axios": "^0.20.0",
+    "fs-extra": "^8.1.0",
+    "puppeteer": "^5.3.1"
   },
   "devDependencies": {
     "cucumber": "^5.1.0",
@@ -12,7 +14,8 @@
     "cucumber-pretty": "^1.5.2"
   },
   "scripts": {
-    "test": "node cucumber features/ -f json:reports/e2e/cucumber_report.json -f node_modules/cucumber-pretty"
+    "test:e2e": "node cucumber features/ -t @e2e -f json:reports/cucumber_report.json -f node_modules/cucumber-pretty",
+    "test:api": "node cucumber features/ -t @api -f json:reports/cucumber_report.json -f node_modules/cucumber-pretty"
   },
   "keywords": [],
   "author": "",

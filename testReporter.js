@@ -2,9 +2,9 @@ const fs = require('fs-extra');
 const reporter = require('cucumber-html-reporter');
 
 const generateReports = function() {
-  const jsonReportPath = 'reports/e2e/cucumber_report.json';
-  const htmlReportPath = 'reports/e2e/cucumber_report.html';
-  const screenshotsPath = 'reports/e2e/screenshots/';
+  const jsonReportPath = 'reports/cucumber_report.json';
+  const htmlReportPath = 'reports/cucumber_report.html';
+  const screenshotsPath = 'reports/screenshots/';
   
   let report = fs.readJsonSync(jsonReportPath);
   fs.writeJsonSync(jsonReportPath, report, { spaces: 2 });
